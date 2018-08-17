@@ -36,8 +36,8 @@ spec:
     spec:
       serviceAccountName: heketi-service-account
       containers:
-      - image: heketi/heketi:dev
-        imagePullPolicy: IfNotPresent
+      - image: quay.io/mkrull/heketi:master
+        imagePullPolicy: Always
         name: deploy-heketi
         env:
         - name: HEKETI_USER_KEY
